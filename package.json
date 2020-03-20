@@ -1,0 +1,53 @@
+{
+  "name": "geodaisy",
+  "description": "Library for geodesic functions",
+  "keywords": [
+    "geolocation",
+    "geodesic",
+    "utility",
+    "haversine"
+  ],
+  "version": "0.1.0",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "browser": "dist/index.umd.js",
+  "module": "dist/index.module.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "test": "jest",
+    "sv": "standard-version"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/preset-typescript": "7.9.0",
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@types/jest": "25.1.4",
+    "babel-jest": "25.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript-prettier": "1.4.2",
+    "husky": "4.2.3",
+    "jest": "25.1.0",
+    "lint-staged": "10.0.8",
+    "prettier": "1.19.1",
+    "rollup": "2.1.0",
+    "rollup-plugin-bundle-size": "1.0.3",
+    "rollup-plugin-peer-deps-external": "2.2.2",
+    "rollup-plugin-typescript2": "0.26.0",
+    "standard-version": "7.1.0",
+    "ts-jest": "25.2.1",
+    "typescript": "3.8.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run lint --fix"
+    ]
+  }
+}
