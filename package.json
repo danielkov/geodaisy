@@ -1,6 +1,7 @@
 {
   "name": "geodaisy",
   "description": "Library for geodesic functions",
+  "license": "MIT",
   "keywords": [
     "geolocation",
     "geodesic",
@@ -21,7 +22,7 @@
     "build": "rollup -c",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "test": "jest",
-    "sv": "standard-version"
+    "release": "standard-version"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
